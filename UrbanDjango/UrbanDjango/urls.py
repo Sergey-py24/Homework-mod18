@@ -25,8 +25,8 @@ from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clst/', index.as_view()),
-    path('fnct/', Index2),
+    path('clst/', Index2.as_view()),
+    path('fnct/', index),
     path('platform/', platform),
     path('platform/games/', games),
     path('platform/cart/', cart),
