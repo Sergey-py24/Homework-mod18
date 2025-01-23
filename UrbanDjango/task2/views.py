@@ -3,9 +3,8 @@ from django.views.generic import TemplateView
 
 
 # Create your views here.
-class index(TemplateView):
-    template_name = 'second_task/class_template.html'
+def index(request):
+    return render(request, 'func_templates.html')
 
-def Index2(request):
-    return render(request, 'second_task/func_template.html')
-
+class Index2(TemplateView):
+    template_name = 'class_templates.html'
