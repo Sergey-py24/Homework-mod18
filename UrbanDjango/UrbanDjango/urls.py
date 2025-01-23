@@ -22,6 +22,6 @@ from task2.views import index, Index2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('2/', index),
-    path('3/', Index2.as_view())
+    path('fnct', index),
+    path('clst', Index2.as_view())
 ]
