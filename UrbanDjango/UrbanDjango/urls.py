@@ -17,11 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import index, Index2
-
-
+# from task3.views import welcome, platform, spec, cart, games
+from task4.views import welcome, platform, spec, cart, games
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('2/', index),
-    path('3/', Index2.as_view(), name='index2')
+    path('fnct/', index),
+    path('clst/', Index2.as_view()),
+    path('', welcome),
+    path('platform/', platform),
+    path('platform/spec/', spec),
+    path('platform/cart/', cart),
+    path('platform/games/', games),
+    path('reghtml/', sign_up_by_html),
+    path('regdjango/', sign_up_by_django),
+
 ]
