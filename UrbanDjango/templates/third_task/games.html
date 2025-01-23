@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+     <h1>Игры</h1>
+    <ul>
+      {% for game in games %}
+      <li>
+        {{ game }}
+        <button>В корзину</button>
+      </li>
+      {% endfor %}
+    </ul>
+    <button><a href="/platform">На главную</a></button>
+    <button><a href="/platform/cart">Перейти в корзину</a></button>
+</body>
+</html>
