@@ -6,6 +6,6 @@ from django.views.generic import TemplateView
 class index(TemplateView):
     template_name = 'second_task/class_template.html'
 
-def index2(request):
+def Index2(request):
     return render(request, 'second_task/func_template.html')
 
